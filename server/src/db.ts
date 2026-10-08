@@ -1,6 +1,10 @@
 import sqlite3 from 'sqlite3';
 import path from 'path';
 import fs from 'fs';
+import { fileURLToPath } from 'url'; 
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const DB_DIR = path.resolve(__dirname, '..');
 if (!fs.existsSync(DB_DIR)) {
