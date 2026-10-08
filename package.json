@@ -4,10 +4,6 @@
   "description": "ChaloNa - College Student Ride-Sharing Prototype",
   "main": "server/src/index.ts",
   "scripts": {
-    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"bgBlue.bold,bgGreen.bold\" \"npm run server:dev\" \"npm run client:dev\"",
-    "server:dev": "tsx watch server/src/index.ts",
-    "client:dev": "npm --prefix client run dev",
-    "seed": "tsx server/src/seed.ts",
     "build": "npm --prefix client run build",
     "start": "tsx server/src/index.ts"
   },
@@ -18,7 +14,8 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
-    "sqlite3": "^5.1.7"
+    "sqlite3": "^5.1.7",
+    "tsx": "^4.19.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -26,7 +23,6 @@
     "@types/node": "^22.7.5",
     "@types/sqlite3": "^3.1.11",
     "concurrently": "^9.0.1",
-    "tsx": "^4.19.1",
     "typescript": "^5.6.3"
   }
 }
